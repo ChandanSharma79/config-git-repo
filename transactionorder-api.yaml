@@ -2,6 +2,11 @@ spring:
   application:
     name: transactionorder-api
 
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017
+      database: ZellleTransactionOrder
+
 logging:
   level:
     com:
@@ -11,7 +16,6 @@ logging:
   file:
     name: logs/transactionorder.log
     path: ./logs
-
 
 management:
   endpoints:
